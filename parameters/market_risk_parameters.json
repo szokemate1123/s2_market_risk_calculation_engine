@@ -1,0 +1,85 @@
+{
+    "equity_risk": {
+        "strategic_shock": 0.22,
+        "T1_base_shock": 0.39,
+        "T2_base_shock": 0.49
+    },
+    "currency_risk": {
+        "currency_up_shock": 0.25,
+        "currency_down_shock": 0.25
+    },
+    "property_risk":{
+        "property_shock": 0.25
+    },
+    "spread_risk_matrices": {
+        "bond_rated_a_i_matrix": [
+            [0.000, 0.000, 0.000, 0.000, 0.000, 0.000],
+            [0.045, 0.055, 0.070, 0.125, 0.225, 0.375],
+            [0.070, 0.084, 0.105, 0.200, 0.350, 0.585],
+            [0.095, 0.109, 0.130, 0.250, 0.440, 0.610],
+            [0.120, 0.134, 0.155, 0.300, 0.465, 0.635]
+        ],
+        "bond_rated_b_i_matrix": [
+            [0.009, 0.011, 0.014, 0.025, 0.045, 0.075],
+            [0.005, 0.006, 0.007, 0.015, 0.025, 0.042],
+            [0.005, 0.005, 0.005, 0.010, 0.018, 0.005],
+            [0.005, 0.005, 0.005, 0.010, 0.005, 0.005],
+            [0.005, 0.005, 0.005, 0.005, 0.005, 0.005]
+        ],
+        "bond_unrated_a_i_matrix": [
+            [0.000],
+            [0.150],
+            [0.235],
+            [0.235],
+            [0.355]
+        ],
+        "bond_unrated_b_i_matrix": [
+            [0.030],
+            [0.017],
+            [0.012],
+            [0.012],
+            [0.005]
+        ]
+    },
+    "concentration_risk": {
+        "asset_allocation_codes_to_exclude": [
+            645, 995
+        ],
+        "excess_exposure_thresholds": [
+            0.03, 0.03, 0.03, 0.015, 0.015, 0.015, 0.015
+        ],
+        "risk_factors": [
+            0.12, 0.12, 0.21, 0.27, 0.73, 0.73, 0.73
+        ],
+        "other_gov_bonds_risk_factors": [
+            0.00, 0.00, 0.12, 0.21, 0.27, 0.73, 0.73
+        ],
+        "unrated_risk_factors": [
+            0.12, 0.21, 0.27, 0.645, 0.73
+        ],
+        "tolerance": 1e-5
+    },
+    "calculation_type_mapping": {
+        "1": 0, "2": 1, "3L": 2, "3X": 3, "4": 4, "5": 5, "6": 6, "7": 7, "8": 8, "9": 9,
+        "A": 10, "B": 11, "C": 12, "D": 13, "E": 14, "F": 15
+    },
+    "EEA_COUNTRIES": [
+        "AT", "BE", "BG", "HR", "CY", "CZ", "DK", "EE", "FI", "FR", "DE", "GR",
+        "HU", "IS", "IE", "IT", "LV", "LI", "LT", "LU", "MT", "NL", "NO", "PL",
+        "PT", "RO", "SK", "SI", "ES", "SE", "CH", "GB"
+    ],
+    "OECD_NON_EEA_COUNTRIES": [
+        "AU", "CA", "CL", "IL", "JP", "KR", "MX", "NZ", "TR", "US"
+    ],
+    "COUNTRY_CURRENCY_MAPPING": {
+        "AT": "EUR", "BE": "EUR", "BG": "BGN", "HR": "HRK", "CY": "EUR",
+        "CZ": "CZK", "DK": "DKK", "EE": "EUR", "FI": "EUR", "FR": "EUR",
+        "DE": "EUR", "GR": "EUR", "HU": "HUF", "IS": "ISK", "IE": "EUR",
+        "IT": "EUR", "LV": "EUR", "LI": "CHF", "LT": "EUR", "LU": "EUR",
+        "MT": "EUR", "NL": "EUR", "NO": "NOK", "PL": "PLN", "PT": "EUR",
+        "RO": "RON", "SK": "EUR", "SI": "EUR", "ES": "EUR", "SE": "SEK",
+        "CH": "CHF", "UK": "GBP", "AU": "AUD", "CA": "CAD", "CL": "CLP",
+        "IL": "ILS", "JP": "JPY", "KR": "KRW", "MX": "MXN", "NZ": "NZD",
+        "TR": "TRY", "US": "USD"
+    }
+}
